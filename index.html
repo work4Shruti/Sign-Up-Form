@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"
+</head>
+<title>Frontend Mentor | Intro component with sign up form</title>
+<!-- stylesheet link -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Bootstrap Scripts -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- icons -->
+<script src="https://kit.fontawesome.com/50d3f97fe9.js" crossorigin="anonymous"></script>
+<body>
+  <div class="container-fluid px-0 background-color-overlay">
+    <div class="row mx-0">
+      <div class="col-sm-6 learn-code">
+        <h1 class="learn-code-heading">Learn to code by watching others</h1>
+        <p class="experienced-developers">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="col-sm-6 mx-0">
+        <button class="try-it-free-button" type="submit" name="button">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+          <div class="container-fluid form-container">
+            <form class="registration-form" action="index.js" method="post">
+              <input class="form-element Firstname" type="text" name="firstname" placeholder="First Name"><br>
+              <p class="Firstname-cannot-be-empty"></p>
+              <input class="form-element Lastname" type="text" name="lastname" placeholder="Last Name"><br>
+              <p class="Lastname-cannot-be-empty"></p>
+              <input class="form-element Email" type="email" name="email" placeholder="Email Address"><br>
+              <p class="Email-cannot-be-empty"></p>
+              <input class="form-element Password" type="password" name="password" placeholder="Password"><br>
+              <p class="Password-cannot-be-empty"></p>
+            </form>
+              <button class="submit-button" onclick="validateForm()" type="submit" name="button">Claim your free trial</button>
+              <p class="thank-you-for-registering"></p>
+              <p class="you-are-agreeing">By clicking the button, you are agreeing to our <span class="terms-services">Terms and Services</span></p>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Shruti Aggarwal</a>.
+      </p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
